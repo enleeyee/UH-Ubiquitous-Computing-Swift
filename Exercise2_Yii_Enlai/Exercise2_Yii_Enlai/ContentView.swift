@@ -42,8 +42,6 @@ struct ContentView: View {
     
     var body: some View {
         VStack {
-            Spacer()
-            
             Text("iPhone Explorer")
                 .font(.largeTitle)
                 .bold()
@@ -58,27 +56,33 @@ struct ContentView: View {
                     x: CGFloat(5), y: CGFloat(5)
                 )
             
-            VStack(alignment: .leading) {
-                Text(iphoneTitles[iphoneIndex])
-                    .padding(8)
-                    .font(.title3)
-                    .bold()
-                    .frame(maxWidth: .infinity)
-                    .background(Color(red: 247/255, green: 149/255, blue: 5/255))
-                    .foregroundColor(.white)
+            ZStack {
+                ScrollView {
+                    VStack(alignment: .leading, spacing: 10) {
+                        Text(iphoneTitles[iphoneIndex])
+                            .padding(8)
+                            .font(.title3)
+                            .bold()
+                            .frame(maxWidth: .infinity)
+                            .background(Color(red: 247/255, green: 149/255, blue: 5/255))
+                            .foregroundColor(.white)
 
-                ForEach(0..<titleDescription.count, id: \.self) {
-                    index in
-                    HStack(alignment: .top) {
-                        Image(systemName: "applelogo")
-                        Text("\(titleDescription[index]): \(iphoneDetails[iphoneIndex][index])")
-                            .multilineTextAlignment(.leading)
+                        ForEach(0..<titleDescription.count, id: \.self) {
+                            index in
+                            HStack(alignment: .top) {
+                                Image(systemName: "applelogo")
+                                Text("\(titleDescription[index]): \(iphoneDetails[iphoneIndex][index])")
+                                    .multilineTextAlignment(.leading)
+                            }
+                            .padding(.leading)
+                        }
                     }
-                    .padding(.leading, 4)
+                    .background(Color(red: 240/255, green: 222/255, blue: 198/255))
+                    .frame(alignment: .top)
+                    .padding(.vertical, 20)
                 }
+                .frame(width: 350, height: 250)
             }
-            .frame(width: 350, height: 200)
-            .background(Color(red: 240/255, green: 222/255, blue: 198/255))
             .padding(.vertical, 20)
             
             Button(action: {
