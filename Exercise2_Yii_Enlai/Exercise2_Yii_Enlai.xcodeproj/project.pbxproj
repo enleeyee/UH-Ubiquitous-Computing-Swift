@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		7B230D2F2C88DB5700250763 /* phoneDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B230D2E2C88DB5700250763 /* phoneDetails.swift */; };
+		7B230D322C89278E00250763 /* colorExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B230D312C89278E00250763 /* colorExtensions.swift */; };
 		7B504E6A2C87C9AD00E0C34F /* SplashScreenView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B504E692C87C9AD00E0C34F /* SplashScreenView.swift */; };
 		7BA675272C8184FB003C2ECD /* Exercise2_Yii_EnlaiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA675262C8184FB003C2ECD /* Exercise2_Yii_EnlaiApp.swift */; };
 		7BA675292C8184FB003C2ECD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BA675282C8184FB003C2ECD /* ContentView.swift */; };
@@ -17,6 +18,7 @@
 
 /* Begin PBXFileReference section */
 		7B230D2E2C88DB5700250763 /* phoneDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = phoneDetails.swift; sourceTree = "<group>"; };
+		7B230D312C89278E00250763 /* colorExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = colorExtensions.swift; sourceTree = "<group>"; };
 		7B504E692C87C9AD00E0C34F /* SplashScreenView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashScreenView.swift; sourceTree = "<group>"; };
 		7BA675232C8184FB003C2ECD /* Exercise2_Yii_Enlai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exercise2_Yii_Enlai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7BA675262C8184FB003C2ECD /* Exercise2_Yii_EnlaiApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Exercise2_Yii_EnlaiApp.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				7BA6752A2C8184FD003C2ECD /* Assets.xcassets */,
 				7BA6752C2C8184FD003C2ECD /* Preview Content */,
 				7B230D2E2C88DB5700250763 /* phoneDetails.swift */,
+				7B230D312C89278E00250763 /* colorExtensions.swift */,
 			);
 			path = Exercise2_Yii_Enlai;
 			sourceTree = "<group>";
@@ -147,6 +150,7 @@
 				7B230D2F2C88DB5700250763 /* phoneDetails.swift in Sources */,
 				7BA675272C8184FB003C2ECD /* Exercise2_Yii_EnlaiApp.swift in Sources */,
 				7B504E6A2C87C9AD00E0C34F /* SplashScreenView.swift in Sources */,
+				7B230D322C89278E00250763 /* colorExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

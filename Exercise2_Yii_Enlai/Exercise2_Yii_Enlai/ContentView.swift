@@ -55,7 +55,7 @@ struct ContentView: View {
             Text("iPhone Explorer")
                 .font(.largeTitle)
                 .bold()
-                .foregroundColor(Color(red: 78/255, green: 85/255, blue: 159/255))
+                .foregroundColor(Color.rgb(78, 85, 159))
             
             Image(iphoneDetails[iphoneIndex].image)
                 .resizable()
@@ -77,7 +77,7 @@ struct ContentView: View {
                                     .font(.title3)
                                     .bold()
                                     .frame(maxWidth: .infinity)
-                                    .background(Color(red: 247/255, green: 149/255, blue: 5/255))
+                                    .background(Color.rgb(247, 149, 5))
                                     .foregroundColor(.white)
                                 
                             } else if propertyName != "image" {
@@ -88,7 +88,7 @@ struct ContentView: View {
                         }
                     }
                 }
-                .background(Color(red: 240/255, green: 222/255, blue: 198/255))
+                .background(Color.rgb(240, 222, 198))
                 .frame(alignment: .top)
                 .padding(.vertical, 20)
             }
@@ -102,7 +102,7 @@ struct ContentView: View {
                     .padding()
                     .font(.title.bold())
                     .frame(maxWidth: .infinity)
-                    .background(Color(red: 0/255, green: 144/255, blue: 164/255))
+                    .background(Color.rgb(0, 144, 164))
                     .foregroundColor(.white)
             }
             
@@ -113,7 +113,7 @@ struct ContentView: View {
                     .padding()
                     .font(.title.bold())
                     .frame(maxWidth: .infinity)
-                    .background(Color(red: 0/255, green: 144/255, blue: 164/255))
+                    .background(Color.rgb(0, 144, 164))
                     .foregroundColor(.white)
             }
             
@@ -124,7 +124,7 @@ struct ContentView: View {
                     .padding()
                     .font(.title.bold())
                     .frame(maxWidth: .infinity)
-                    .background(Color(red: 0/255, green: 144/255, blue: 164/255))
+                    .background(Color.rgb(0, 144, 164))
                     .foregroundColor(.white)
             }
             .actionSheet(isPresented: $showingActionSheet) {
