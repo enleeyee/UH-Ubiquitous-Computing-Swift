@@ -18,9 +18,9 @@ struct SplashScreenView: View {
         } else {
             VStack {
                 Spacer()
-                Image(systemName: "applelogo")
+                Image("phoneLogo")
                     .resizable()
-                    .frame(width: 100, height: 125)
+                    .frame(width: 200, height: 200)
                     .padding()
                 
                 Text("Phone Explorer")
