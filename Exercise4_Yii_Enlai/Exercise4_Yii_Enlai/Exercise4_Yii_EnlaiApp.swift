@@ -11,7 +11,7 @@ import SwiftUI
 struct Exercise4_Yii_EnlaiApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SplashScreenView()
         }
     }
 }
