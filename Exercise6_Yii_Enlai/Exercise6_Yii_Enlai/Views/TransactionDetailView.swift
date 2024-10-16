@@ -123,8 +123,6 @@ struct TransactionDetailView: View {
             Text("Address: \(entry.address)")
             
             Text("Phone: \(entry.phone)")
-            
-            Text("Logo: \(entry.logo)")
         }
     }
     
