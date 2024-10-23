@@ -46,12 +46,12 @@ struct TransactionDetailView: View {
         VStack(alignment: .leading, spacing: 10) {
             // Logo and Title
             HStack {
-                AsyncImage(url: URL(string: entry.logo)) { image in
+                AsyncImage(url: entry.logo) { image in
                     image.resizable()
                 } placeholder: {
                     ProgressView()
                 }
-                .frame(width: 50, height: 50)
+                .frame(width: 40, height: 50)
                 .clipShape(Circle())
                 
                 VStack(alignment: .leading) {
@@ -145,5 +145,5 @@ struct TransactionDetailView: View {
 }
 
 #Preview {
-    TransactionDetailView(date: "Jan 1, 1999", entry: Entry(logo: "", title: "Sample", amount: "$0", type: "Type", description: "Description", merchant_type: "Merchant", method: "Visa", address: "Address", cap_lat: 00.0000000, cap_long: 00.0000000, phone: "555-1234"))
+    TransactionDetailView(date: "Jan 1, 1999", entry: Entry(logo: URL(string:"http://m.cpl.uh.edu/courses/ubicomp/fall2022/webservice/transactions/heb_logo.png")!, title: "Sample", amount: "$0", type: "Type", description: "Description", merchant_type: "Merchant", method: "Visa", address: "Address", cap_lat: 00.0000000, cap_long: 00.0000000, phone: "555-1234"))
 }

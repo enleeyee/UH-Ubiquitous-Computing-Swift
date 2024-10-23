@@ -18,7 +18,7 @@ struct Transactions: Codable {
 }
 
 struct Entry: Codable {
-    let logo: String
+    let logo: URL
     let title: String
     let amount: String
     let type: String

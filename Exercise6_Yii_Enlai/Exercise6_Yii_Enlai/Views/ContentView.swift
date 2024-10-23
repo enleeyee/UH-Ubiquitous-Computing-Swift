@@ -106,24 +106,15 @@ struct ContentView: View {
     // A helper function for each row
     private func transactionRow(for entry: Entry) -> some View {
         HStack {
-            AsyncImage(url: URL(string: entry.logo)) { phase in
-                switch phase {
-                case .empty:
-                    ProgressView()
-                        .frame(width: 40, height: 40)
-                case .success(let image):
-                    image
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                        .frame(width: 40, height: 40)
-                case .failure:
-                    Image(systemName: "xmark.circle")
-                        .resizable()
-                        .frame(width: 40, height: 40)
-                        .foregroundColor(.red)
-                @unknown default:
-                    EmptyView()
-                }
+            AsyncImage(url: entry.logo) { image in
+                image.resizable()
+                    .aspectRatio(contentMode: .fit)
+                    .frame(maxWidth: 40, maxHeight: 50)
+                    .clipShape(Circle())
+            }
+            placeholder: {
+                ProgressView()
+                    .frame(width: 40, height: 50)
             }
             .padding(.trailing, 10)
 
@@ -145,7 +136,12 @@ struct ContentView: View {
     }
     // Load the JSON data from the API
     func loadData() async {
-        guard let url = URL(string: "https://m.cpl.uh.edu/courses/ubicomp/fall2022/webservice/transactions/transactions_map.json") else {
+        guard
+            let url = URL(
+                string:
+                    "https://m.cpl.uh.edu/courses/ubicomp/fall2022/webservice/transactions/transactions_map.json"
+            )
+        else {
             print("Invalid URL")
             return
         }
@@ -158,7 +154,9 @@ struct ContentView: View {
                 transactions = res.transactions
             }
         } catch {
-            print("Error trying to decode JSON object: \(error.localizedDescription)")
+            print(
+                "Error trying to decode JSON object: \(error.localizedDescription)"
+            )
         }
     }
     

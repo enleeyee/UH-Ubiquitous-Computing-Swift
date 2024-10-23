@@ -7,37 +7,19 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		7B1F2EA92CB8EB5600370631 /* Exercise6_Yii_Enlai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exercise6_Yii_Enlai.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		7B564ACB2CC1B28B00C745C1 /* Exam2_Yii_Enlai.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Exam2_Yii_Enlai.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		7B564AC12CC088A800C745C1 /* Exceptions for "Exercise6_Yii_Enlai" folder in "Exercise6_Yii_Enlai" target */ = {
-			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
-			membershipExceptions = (
-				"Exercise6-Yii-Enlai-Info.plist",
-			);
-			target = 7B1F2EA82CB8EB5600370631 /* Exercise6_Yii_Enlai */;
-		};
-/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
-
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		7B1F2EAB2CB8EB5600370631 /* Exercise6_Yii_Enlai */ = {
+		7B564ACD2CC1B28B00C745C1 /* Exam2_Yii_Enlai */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			exceptions = (
-				7B564AC12CC088A800C745C1 /* Exceptions for "Exercise6_Yii_Enlai" folder in "Exercise6_Yii_Enlai" target */,
-			);
-			path = Exercise6_Yii_Enlai;
-			sourceTree = "<group>";
-		};
-		7B1F2ED42CB8EC9200370631 /* Model */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = Model;
+			path = Exam2_Yii_Enlai;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		7B1F2EA62CB8EB5600370631 /* Frameworks */ = {
+		7B564AC82CC1B28B00C745C1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -47,19 +29,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		7B1F2EA02CB8EB5600370631 = {
+		7B564AC22CC1B28B00C745C1 = {
 			isa = PBXGroup;
 			children = (
-				7B1F2EAB2CB8EB5600370631 /* Exercise6_Yii_Enlai */,
-				7B1F2EAA2CB8EB5600370631 /* Products */,
-				7B1F2ED42CB8EC9200370631 /* Model */,
+				7B564ACD2CC1B28B00C745C1 /* Exam2_Yii_Enlai */,
+				7B564ACC2CC1B28B00C745C1 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		7B1F2EAA2CB8EB5600370631 /* Products */ = {
+		7B564ACC2CC1B28B00C745C1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				7B1F2EA92CB8EB5600370631 /* Exercise6_Yii_Enlai.app */,
+				7B564ACB2CC1B28B00C745C1 /* Exam2_Yii_Enlai.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,65 +48,64 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		7B1F2EA82CB8EB5600370631 /* Exercise6_Yii_Enlai */ = {
+		7B564ACA2CC1B28B00C745C1 /* Exam2_Yii_Enlai */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7B1F2EB72CB8EB5700370631 /* Build configuration list for PBXNativeTarget "Exercise6_Yii_Enlai" */;
+			buildConfigurationList = 7B564AD92CC1B28C00C745C1 /* Build configuration list for PBXNativeTarget "Exam2_Yii_Enlai" */;
 			buildPhases = (
-				7B1F2EA52CB8EB5600370631 /* Sources */,
-				7B1F2EA62CB8EB5600370631 /* Frameworks */,
-				7B1F2EA72CB8EB5600370631 /* Resources */,
+				7B564AC72CC1B28B00C745C1 /* Sources */,
+				7B564AC82CC1B28B00C745C1 /* Frameworks */,
+				7B564AC92CC1B28B00C745C1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				7B1F2EAB2CB8EB5600370631 /* Exercise6_Yii_Enlai */,
-				7B1F2ED42CB8EC9200370631 /* Model */,
+				7B564ACD2CC1B28B00C745C1 /* Exam2_Yii_Enlai */,
 			);
-			name = Exercise6_Yii_Enlai;
+			name = Exam2_Yii_Enlai;
 			packageProductDependencies = (
 			);
-			productName = Exercise6_Yii_Enlai;
-			productReference = 7B1F2EA92CB8EB5600370631 /* Exercise6_Yii_Enlai.app */;
+			productName = Exam2_Yii_Enlai;
+			productReference = 7B564ACB2CC1B28B00C745C1 /* Exam2_Yii_Enlai.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		7B1F2EA12CB8EB5600370631 /* Project object */ = {
+		7B564AC32CC1B28B00C745C1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1600;
 				TargetAttributes = {
-					7B1F2EA82CB8EB5600370631 = {
+					7B564ACA2CC1B28B00C745C1 = {
 						CreatedOnToolsVersion = 16.0;
 					};
 				};
 			};
-			buildConfigurationList = 7B1F2EA42CB8EB5600370631 /* Build configuration list for PBXProject "Exercise6_Yii_Enlai" */;
+			buildConfigurationList = 7B564AC62CC1B28B00C745C1 /* Build configuration list for PBXProject "Exam2_Yii_Enlai" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 7B1F2EA02CB8EB5600370631;
+			mainGroup = 7B564AC22CC1B28B00C745C1;
 			minimizedProjectReferenceProxies = 1;
 			preferredProjectObjectVersion = 77;
-			productRefGroup = 7B1F2EAA2CB8EB5600370631 /* Products */;
+			productRefGroup = 7B564ACC2CC1B28B00C745C1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				7B1F2EA82CB8EB5600370631 /* Exercise6_Yii_Enlai */,
+				7B564ACA2CC1B28B00C745C1 /* Exam2_Yii_Enlai */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		7B1F2EA72CB8EB5600370631 /* Resources */ = {
+		7B564AC92CC1B28B00C745C1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -135,7 +115,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		7B1F2EA52CB8EB5600370631 /* Sources */ = {
+		7B564AC72CC1B28B00C745C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -145,7 +125,7 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		7B1F2EB52CB8EB5700370631 /* Debug */ = {
+		7B564AD72CC1B28C00C745C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -208,7 +188,7 @@
 			};
 			name = Debug;
 		};
-		7B1F2EB62CB8EB5700370631 /* Release */ = {
+		7B564AD82CC1B28C00C745C1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -264,18 +244,18 @@
 			};
 			name = Release;
 		};
-		7B1F2EB82CB8EB5700370631 /* Debug */ = {
+		7B564ADA2CC1B28C00C745C1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Exercise6_Yii_Enlai/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Exam2_Yii_Enlai/Preview Content\"";
 				DEVELOPMENT_TEAM = AYV6XJF9NL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Exercise6-Yii-Enlai-Info.plist";
+				INFOPLIST_FILE = "Exam2-Yii-Enlai-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -286,7 +266,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ubiq-uh.Exercise6-Yii-Enlai";
+				PRODUCT_BUNDLE_IDENTIFIER = "ubiq-uh.Exam2-Yii-Enlai";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -294,18 +274,18 @@
 			};
 			name = Debug;
 		};
-		7B1F2EB92CB8EB5700370631 /* Release */ = {
+		7B564ADB2CC1B28C00C745C1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Exercise6_Yii_Enlai/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"Exam2_Yii_Enlai/Preview Content\"";
 				DEVELOPMENT_TEAM = AYV6XJF9NL;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Exercise6-Yii-Enlai-Info.plist";
+				INFOPLIST_FILE = "Exam2-Yii-Enlai-Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -316,7 +296,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "ubiq-uh.Exercise6-Yii-Enlai";
+				PRODUCT_BUNDLE_IDENTIFIER = "ubiq-uh.Exam2-Yii-Enlai";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -327,25 +307,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		7B1F2EA42CB8EB5600370631 /* Build configuration list for PBXProject "Exercise6_Yii_Enlai" */ = {
+		7B564AC62CC1B28B00C745C1 /* Build configuration list for PBXProject "Exam2_Yii_Enlai" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7B1F2EB52CB8EB5700370631 /* Debug */,
-				7B1F2EB62CB8EB5700370631 /* Release */,
+				7B564AD72CC1B28C00C745C1 /* Debug */,
+				7B564AD82CC1B28C00C745C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7B1F2EB72CB8EB5700370631 /* Build configuration list for PBXNativeTarget "Exercise6_Yii_Enlai" */ = {
+		7B564AD92CC1B28C00C745C1 /* Build configuration list for PBXNativeTarget "Exam2_Yii_Enlai" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				7B1F2EB82CB8EB5700370631 /* Debug */,
-				7B1F2EB92CB8EB5700370631 /* Release */,
+				7B564ADA2CC1B28C00C745C1 /* Debug */,
+				7B564ADB2CC1B28C00C745C1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 7B1F2EA12CB8EB5600370631 /* Project object */;
+	rootObject = 7B564AC32CC1B28B00C745C1 /* Project object */;
 }
