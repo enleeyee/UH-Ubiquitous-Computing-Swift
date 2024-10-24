@@ -16,27 +16,28 @@ struct ResumesPageView: View {
         NavigationStack {
             ZStack {
                 CustomColor.Background
-                    .ignoresSafeArea()
+                    .ignoresSafeArea(edges: .top)
                 
                 VStack {
                     List(resumes) { resume in
                         HStack {
-                            VStack(alignment: .leading) {
-                                Text(resume.title)
-                                    .font(.headline)
-                                    .foregroundColor(.black)
-                            }
-                            Spacer()
+                            Text(resume.title)
+                                .font(.headline)
+                                .foregroundColor(.black)
+                            
                             NavigationLink(destination: ResumeDetailView(resume: resume)) {
-                                Text("View")
-                                    .font(.headline)
-                                    .foregroundColor(.black)
-                                    .frame(width: 60, height: 30)
-                                    .background(CustomColor.LightBlue)
-                                    .cornerRadius(10)
-                            }
+                                EmptyView()
+                            }.opacity(0.0)
+                            
+                            Spacer()
+                            
+                            Text("View")
+                                .font(.headline)
+                                .foregroundColor(.black)
+                                .frame(width: 60, height: 30)
+                                .background(CustomColor.LightBlue)
+                                .cornerRadius(10)
                         }
-                        .listRowBackground(CustomColor.Background)
                     }
                     .listStyle(InsetGroupedListStyle())
                     .scrollContentBackground(.hidden)
@@ -48,29 +49,42 @@ struct ResumesPageView: View {
     }
 }
 
-// Destination View when 'View' is pressed
 struct ResumeDetailView: View {
     let resume: Resume
     
     var body: some View {
         ZStack {
             CustomColor.Background
-                .ignoresSafeArea()
+                .ignoresSafeArea(edges: .top)
             
             VStack {
                 Text(resume.title)
                     .font(.largeTitle)
-                    .foregroundColor(.white)
+                    .foregroundColor(.black)
                     .padding(.bottom, 20)
                 
                 Text("Details about \(resume.title)")
                     .font(.body)
-                    .foregroundColor(.white)
+                    .foregroundColor(.black)
                     .padding(.bottom, 20)
                 
                 Spacer()
             }
         }
+        .toolbar {
+            ToolbarItem(placement: .navigationBarTrailing) {
+                Button(action: downloadResume) {
+                    HStack {
+                        Image(systemName: "square.and.arrow.down")
+                        Text("Download")
+                    }
+                }
+            }
+        }
+    }
+    
+    func downloadResume() {
+        print("Downloading \(resume.title) as a PDF...")
     }
 }
 

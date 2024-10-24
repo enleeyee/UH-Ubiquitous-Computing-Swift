@@ -11,35 +11,13 @@ struct DataControlsView: View {
 
                 Form {
                     Section {
-                        Toggle("Improve the model for everyone", isOn: .constant(true))
-                        Text("Allow your content to be used to train our models, which makes ChatGPT better for you and everyone who uses it. We take steps to protect your privacy.")
-                            .font(.footnote)
-                            .foregroundColor(.gray)
-                            .padding(.top, 2)
-
-                        Link("Learn more", destination: URL(string: "https://example.com")!)
-                            .font(.footnote)
-                            .foregroundColor(.blue)
-                            .padding(.bottom, 10)
-
-                        Toggle("Improve voice for everyone", isOn: .constant(false))
-                        Text("Share audio from voice chats to train our models. This improves the quality of voice chats for everyone.")
-                            .font(.footnote)
-                            .foregroundColor(.gray)
-                            .padding(.top, 2)
-
-                        Link("Learn more", destination: URL(string: "https://example.com")!)
-                            .font(.footnote)
-                            .foregroundColor(.blue)
-                    }
-                    
-                    Section {
                         Button(action: {
                             print("Archive All Chats tapped")
                         }) {
                             Text("Archive All Chats")
                                 .foregroundColor(.primary)
                         }
+                        .listRowBackground(CustomColor.LightBlue)
                         
                         Button(action: {
                             print("Delete All Chats tapped")
@@ -47,6 +25,7 @@ struct DataControlsView: View {
                             Text("Delete All Chats")
                                 .foregroundColor(.red)
                         }
+                        .listRowBackground(CustomColor.LightBlue)
                     }
 
                     Section {
@@ -56,6 +35,7 @@ struct DataControlsView: View {
                             Text("Export Data")
                                 .foregroundColor(.primary)
                         }
+                        .listRowBackground(CustomColor.LightBlue)
 
                         Button(action: {
                             print("Delete Account tapped")
@@ -63,6 +43,7 @@ struct DataControlsView: View {
                             Text("Delete Account")
                                 .foregroundColor(.red)
                         }
+                        .listRowBackground(CustomColor.LightBlue)
                     }
                 }
                 .scrollContentBackground(.hidden)

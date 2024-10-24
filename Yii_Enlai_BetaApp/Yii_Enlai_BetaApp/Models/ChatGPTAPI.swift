@@ -1,3 +1,5 @@
+import Foundation
+
 class ChatGPTAPI {
     private let config: ChatGPTAPIConfig
     private let session = URLSession.shared
@@ -6,8 +8,23 @@ class ChatGPTAPI {
         self.config = ChatGPTAPIConfig(apiKey: apiKey)
     }
 
-    func sendMessage(messages: [Message], completion: @escaping (Result<String, Error>) -> Void) {
-        let requestModel = ChatGPTRequest(model: "gpt-3.5-turbo", messages: messages)
+    func sendMessage(
+        messages: [Message],
+        temperature: Double,
+        maxTokens: Int,
+        frequencyPenalty: Double,
+        presencePenalty: Double,
+        completion: @escaping (Result<String, Error>) -> Void
+    ) {
+        let requestModel = ChatGPTRequest(
+            model: "gpt-3.5-turbo",
+            messages: messages,
+            temperature: temperature,
+            maxTokens: maxTokens,
+            frequencyPenalty: frequencyPenalty,
+            presencePenalty: presencePenalty
+        )
+
         guard let url = URL(string: config.baseUrl) else { return }
 
         var request = URLRequest(url: url)

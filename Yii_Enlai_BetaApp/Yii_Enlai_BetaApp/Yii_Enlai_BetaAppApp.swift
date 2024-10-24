@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct Yii_Enlai_BetaAppApp: App {
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            SplashScreenView()
         }
     }
 }

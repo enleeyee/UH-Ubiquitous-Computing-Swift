@@ -1,22 +1,15 @@
-//
-//  ArchivedChatsView.swift
-//  Yii_Enlai_BetaApp
-//
-//  Created by Enlai Yii on 10/24/24.
-//
-
-
 import SwiftUI
 
 struct ArchivedResumesView: View {
+    @Environment(\.dismiss) var dismiss
+
     var body: some View {
         NavigationStack {
             ZStack {
-                Color.black
+                CustomColor.Background
                     .ignoresSafeArea()
 
                 VStack(alignment: .leading, spacing: 20) {
-                    // Search Bar
                     HStack {
                         Image(systemName: "magnifyingglass")
                             .foregroundColor(.gray)
@@ -29,25 +22,26 @@ struct ArchivedResumesView: View {
                     .cornerRadius(10)
                     .padding(.horizontal)
 
-                    // Archived Sections
                     ScrollView {
                         VStack(alignment: .leading, spacing: 30) {
-                            ArchivedSectionView(
-                                title: "Last week",
-                                chats: ["Uni Library DB Back End"]
-                            )
-
-                            ArchivedSectionView(
-                                title: "7 months ago",
-                                chats: ["Software Design", "Amazon OA"]
-                            )
+                            Text("No Archived Resumes")
                         }
                         .padding(.horizontal)
                     }
                 }
             }
-            .navigationTitle("Archived Chats")
+            .navigationTitle("Archived Resumes")
             .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button(action: {
+                        dismiss()
+                    }) {
+                        Image(systemName: "chevron.left")
+                            .foregroundColor(.black)
+                    }
+                }
+            }
         }
     }
 }
@@ -60,12 +54,12 @@ struct ArchivedSectionView: View {
         VStack(alignment: .leading, spacing: 10) {
             Text(title)
                 .font(.headline)
-                .foregroundColor(.gray)
+                .foregroundColor(.black)
 
             ForEach(chats, id: \.self) { chat in
                 Text(chat)
                     .font(.body)
-                    .foregroundColor(.white)
+                    .foregroundColor(.black)
                     .padding(.vertical, 10)
                 Divider()
                     .background(Color.gray)

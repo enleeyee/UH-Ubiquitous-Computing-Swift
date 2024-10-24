@@ -38,6 +38,7 @@ struct SignUpView: View {
                     .cornerRadius(10)
                     .frame(width: 280, height: 50)
                     .padding(.bottom, 10)
+                    .autocapitalization(.none)
 
                 TextField("last name", text: $lastName)
                     .padding()
@@ -46,6 +47,7 @@ struct SignUpView: View {
                     .cornerRadius(10)
                     .frame(width: 280, height: 50)
                     .padding(.bottom, 10)
+                    .autocapitalization(.none)
 
                 TextField("email address", text: $email)
                     .padding()
@@ -54,6 +56,8 @@ struct SignUpView: View {
                     .cornerRadius(10)
                     .frame(width: 280, height: 50)
                     .padding(.bottom, 10)
+                    .autocapitalization(.none)
+                    .keyboardType(.emailAddress)
 
                 ZStack(alignment: .trailing) {
                     if isPasswordVisible {
@@ -63,6 +67,7 @@ struct SignUpView: View {
                             .cornerRadius(10)
                             .foregroundColor(.black)
                             .frame(width: 280, height: 50)
+                            .autocapitalization(.none)
                     } else {
                         SecureField("password", text: $password)
                             .padding()
@@ -70,6 +75,7 @@ struct SignUpView: View {
                             .cornerRadius(10)
                             .foregroundColor(.black)
                             .frame(width: 280, height: 50)
+                            .autocapitalization(.none)
                     }
 
                     Button(action: {
