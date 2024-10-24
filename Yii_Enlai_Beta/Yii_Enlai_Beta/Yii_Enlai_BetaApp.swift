@@ -11,7 +11,7 @@ import SwiftUI
 struct Yii_Enlai_BetaApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainTabView()
         }
     }
 }
