@@ -26,16 +26,16 @@ struct LoginView: View {
                 Text("Welcome Back")
                     .font(.title)
                     .fontWeight(.bold)
-                    .foregroundColor(.black)
+                    .foregroundColor(CustomColor.dynamicTextColor)
                     .padding(.bottom, 20)
 
                 TextField("email address", text: $email)
                     .padding()
                     .background(CustomColor.WhiteBlue)
                     .cornerRadius(10)
-                    .foregroundColor(.black)
                     .frame(width: 280, height: 50)
                     .padding(.bottom, 10)
+                    .foregroundColor(CustomColor.dynamicTextColor)
 
                 ZStack(alignment: .trailing) {
                     if isPasswordVisible {
@@ -43,22 +43,22 @@ struct LoginView: View {
                             .padding()
                             .background(CustomColor.WhiteBlue)
                             .cornerRadius(10)
-                            .foregroundColor(.black)
                             .frame(width: 280, height: 50)
+                            .foregroundColor(CustomColor.dynamicTextColor)
                     } else {
                         SecureField("password", text: $password)
                             .padding()
                             .background(CustomColor.WhiteBlue)
                             .cornerRadius(10)
-                            .foregroundColor(.black)
                             .frame(width: 280, height: 50)
+                            .foregroundColor(CustomColor.dynamicTextColor)
                     }
 
                     Button(action: {
                         isPasswordVisible.toggle()
                     }) {
                         Image(systemName: isPasswordVisible ? "eye.fill" : "eye.slash.fill")
-                            .foregroundColor(.black)
+                            .foregroundColor(CustomColor.dynamicIconColor)
                     }
                     .padding(.trailing, 10)
                 }
@@ -70,7 +70,7 @@ struct LoginView: View {
                     Text("continue")
                         .frame(width: 280, height: 50)
                         .font(.headline)
-                        .foregroundColor(.black)
+                        .foregroundColor(CustomColor.dynamicTextColor)
                         .background(CustomColor.LightBlue)
                         .cornerRadius(10)
                 }
@@ -78,14 +78,15 @@ struct LoginView: View {
 
                 HStack {
                     Text("Don’t have an account?")
-                        .foregroundColor(.black)
+                        .foregroundColor(CustomColor.dynamicTextColor)
+
                     Button(action: {
                         showSignUpPage = true
                     }) {
                         Text("Sign Up")
                             .font(.footnote)
                             .fontWeight(.bold)
-                            .foregroundColor(.black)
+                            .foregroundColor(CustomColor.dynamicTextColor)
                             .underline()
                     }
                 }
